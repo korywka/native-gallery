@@ -1,5 +1,5 @@
 native-gallery {
-    display: inline-flex;
+    display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -15,6 +15,7 @@ native-gallery:not(.-loaded) [loading="lazy"] {
 }
 
 native-gallery img {
+    flex: 0 0 auto;
     width: 100%;
     height: 100%;
     object-fit: contain;

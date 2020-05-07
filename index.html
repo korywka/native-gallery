@@ -5,14 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Native Gallery</title>
   <style>
-    html, body {
-      height: 100%;
-    }
-
     body {
       margin: 0;
       font-family: sans-serif;
       font-size: 16px;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 */
+      position: relative;
+    }
+
+    native-gallery {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #ccc;
     }
 
     .controls {
@@ -23,7 +39,7 @@
       text-align: center;
     }
 
-    button {
+    .controls button {
       margin: 6px;
       padding: 8px 16px;
       border: 1px solid #ccc;
@@ -34,43 +50,30 @@
       cursor: pointer;
     }
 
-    #current {
+    .controls div {
       margin: 0 12px;
-    }
-
-    #gallery {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #ccc;
-    }
-
-    .container {
-      height: 0;
-      padding-bottom: 56.25%; /* 16:9 */
-      position: relative;
     }
   </style>
   <link href="./src/styles.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-  <native-gallery id="gallery">
-    <img src="images/1.jpg" width="1600" height="900" alt="">
-    <img src="images/2.jpg" width="675" height="900" alt="" loading="lazy">
-    <img src="images/3.jpg" width="1600" height="900" alt="" loading="lazy">
-    <img src="images/4.jpg" width="1600" height="900" alt="" loading="lazy">
-    <img src="images/5.jpg" width="1600" height="900" alt="" loading="lazy">
-  </native-gallery>
-</div>
+<div class="wrapper">
+  <div class="gallery">
+    <native-gallery id="gallery">
+      <img src="images/1.jpg" width="1600" height="900" alt="">
+      <img src="images/2.jpg" width="675" height="900" alt="" loading="lazy">
+      <img src="images/3.jpg" width="1600" height="900" alt="" loading="lazy">
+      <img src="images/4.jpg" width="1600" height="900" alt="" loading="lazy">
+      <img src="images/5.jpg" width="1600" height="900" alt="" loading="lazy">
+    </native-gallery>
+  </div>
 
-<div class="controls">
-  <button id="prev">Prev</button>
-  <div id="current">1 / 5</div>
-  <button id="next">Next</button>
+  <div class="controls">
+    <button id="prev">Prev</button>
+    <div id="current">1 / 5</div>
+    <button id="next">Next</button>
+  </div>
 </div>
 
 <script type="module">

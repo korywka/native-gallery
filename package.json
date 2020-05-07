@@ -5,6 +5,7 @@
   "module": "src/index",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint ./src",
     "build": "rollup -c"
   },
   "devDependencies": {

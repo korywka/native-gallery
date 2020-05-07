@@ -1,0 +1,24 @@
+native-gallery {
+    display: inline-flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+native-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+native-gallery:not(.-loaded) [loading="lazy"] {
+    /* without display none images with loading="lazy" are loaded immediately */
+    display: none;
+}
+
+native-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    user-select: none;
+    scroll-snap-align: center;
+}

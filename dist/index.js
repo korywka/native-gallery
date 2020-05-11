@@ -37,21 +37,27 @@ NativeGallery.prototype.initialize = function initialize () {
 };
 
 NativeGallery.prototype.prev = function prev () {
+    var this$1 = this;
+
   if (this.currentIndex === 0) { return; }
-  var prevImage = this.images[this.currentIndex - 1];
+  var toIndex = this.currentIndex - 1;
+  var prevImage = this.images[toIndex];
   this.preloadImage(prevImage)
     .then(function () {
-      prevImage.scrollIntoView();
+      this$1.root.scrollTo(this$1.root.offsetWidth * toIndex, 0);
     })
     .catch(function (error) { return console.error(error); });
 };
 
 NativeGallery.prototype.next = function next () {
+    var this$1 = this;
+
   if (this.currentIndex === this.count - 1) { return; }
-  var nextImage = this.images[this.currentIndex + 1];
+  var toIndex = this.currentIndex + 1;
+  var nextImage = this.images[toIndex];
   this.preloadImage(nextImage)
     .then(function () {
-      nextImage.scrollIntoView();
+      this$1.root.scrollTo(this$1.root.offsetWidth * toIndex, 0);
     })
     .catch(function (error) { return console.error(error); });
 };

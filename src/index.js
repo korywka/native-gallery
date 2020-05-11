@@ -20,20 +20,22 @@ class NativeGallery {
 
   prev() {
     if (this.currentIndex === 0) return;
-    const prevImage = this.images[this.currentIndex - 1];
+    const toIndex = this.currentIndex - 1;
+    const prevImage = this.images[toIndex];
     this.preloadImage(prevImage)
       .then(() => {
-        prevImage.scrollIntoView();
+        this.root.scrollTo(this.root.offsetWidth * toIndex, 0);
       })
       .catch((error) => console.error(error));
   }
 
   next() {
     if (this.currentIndex === this.count - 1) return;
-    const nextImage = this.images[this.currentIndex + 1];
+    const toIndex = this.currentIndex + 1;
+    const nextImage = this.images[toIndex];
     this.preloadImage(nextImage)
       .then(() => {
-        nextImage.scrollIntoView();
+        this.root.scrollTo(this.root.offsetWidth * toIndex, 0);
       })
       .catch((error) => console.error(error));
   }

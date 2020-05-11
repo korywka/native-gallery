@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Native Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="../src/styles.css" rel="stylesheet">
+  <link href="./example.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+  <h1>Native Gallery</h1>
+
+  <div class="title">
+    <a href="./index.html">With browser-level lazy-loading</a>
+    <a href="./lazysizes.html" class="current">With lazysizes.js</a>
+  </div>
+
+  <div class="controls">
+    <button id="prev">Prev</button>
+    <div id="current">1 / 5</div>
+    <button id="next">Next</button>
+  </div>
+
+  <div class="gallery">
+    <native-gallery>
+      <img data-src="1.jpg" width="1600" height="900" alt="" class="lazyload">
+      <img data-src="2.jpg" width="675" height="900" alt="" class="lazyload">
+      <img data-src="3.jpg" width="1600" height="900" alt="" class="lazyload">
+      <img data-src="4.jpg" width="1600" height="900" alt="" class="lazyload">
+      <img data-src="5.jpg" width="1600" height="900" alt="" class="lazyload">
+    </native-gallery>
+  </div>
+</div>
+
+<script src="lazysizes.min.js"></script>
+<script type="module" src="example.js"></script>
+
+</body>
+</html>

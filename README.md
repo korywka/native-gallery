@@ -1,6 +1,6 @@
-# Native Gallery
+# native-gallery
 
-[Native Image Gallery](https://bravecow.github.io/native-gallery/example/) in ~ 100 lines of code.
+[Native image gallery](https://bravecow.github.io/native-gallery/example/) in ~ 100 lines of code.
 
 ## How it works
 

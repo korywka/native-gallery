@@ -1,8 +1,8 @@
 # native-gallery
 
-[Native image gallery](https://bravecow.github.io/native-gallery/example/) in ~ 100 lines of code.
+[native image gallery](https://bravecow.github.io/native-gallery/example/) in ~ 100 lines of code.
 
-## How it works
+## how it works
 
 * use CSS property [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) for snapping
 * use CSS property [scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) for smooth JS scrolling
@@ -11,7 +11,7 @@
 * use [Custom Events](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) to listen for events
 * it was named as `native-gallery` to become [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) in the future
 
-## Usage 
+## usage 
 
 ```javascript
 import NativeGallery from 'native-gallery';
@@ -30,10 +30,10 @@ target.addEventListener('change', (event) => {
 ```
 
 ```html
-<!-- Include CSS file -->
+<!-- include CSS file -->
 <link href="styles.css" rel="stylesheet">
 
-<!-- Gallery markup -->
+<!-- gallery markup -->
 <native-gallery>
   <img src="1.jpg" width="1600" height="900" alt="">
   <img src="2.jpg" width="675" height="900" alt="" loading="lazy">

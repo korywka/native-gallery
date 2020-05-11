@@ -2,7 +2,7 @@
 
 [native image gallery](https://bravecow.github.io/native-gallery/example/) in ~ 100 lines of code.
 
-## how it works
+## How it works
 
 * use CSS property [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) for snapping
 * use CSS property [scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) for smooth JS scrolling
@@ -11,7 +11,7 @@
 * use [Custom Events](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) to listen for events
 * it was named as `native-gallery` to become [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) in the future
 
-## usage 
+## Usage 
 
 ```javascript
 import NativeGallery from 'native-gallery';

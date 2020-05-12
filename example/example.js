@@ -1,4 +1,4 @@
-import NativeGallery from '../src';
+import NativeGallery from '../src/index.js';
 
 const target = document.querySelector('native-gallery');
 const gallery = new NativeGallery(target);

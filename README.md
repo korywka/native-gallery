@@ -4,11 +4,11 @@
 
 ## How it works
 
-* use CSS property [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) for snapping
-* use CSS property [scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) for smooth JS scrolling
-* use `loading` attribute for [Native Lazy Loading](https://web.dev/native-lazy-loading/)
-* works with [lazysizes.js](https://github.com/aFarkas/lazysizes)
-* use [Custom Events](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+* CSS property [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) for snapping
+* CSS property [scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) for smooth JS scrolling
+* `loading` attribute for [Native Lazy Loading](https://web.dev/native-lazy-loading/)
+* compatible with [lazysizes.js](https://github.com/aFarkas/lazysizes)
+* [Custom Events](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
 * it was named as `native-gallery` to become [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) in the future
 
 ## Usage 

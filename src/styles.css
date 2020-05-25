@@ -3,6 +3,7 @@ native-gallery {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 native-gallery::-webkit-scrollbar {

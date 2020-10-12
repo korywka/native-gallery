@@ -26,7 +26,7 @@ class NativeGallery {
       .then(() => {
         this.root.scrollTo(this.root.offsetWidth * toIndex, 0);
       })
-      .catch((error) => console.error(error));
+      .catch(error => console.error(error));
   }
 
   next() {
@@ -37,7 +37,7 @@ class NativeGallery {
       .then(() => {
         this.root.scrollTo(this.root.offsetWidth * toIndex, 0);
       })
-      .catch((error) => console.error(error));
+      .catch(error => console.error(error));
   }
 
   fireChange() {
@@ -57,7 +57,7 @@ class NativeGallery {
     return new Promise((resolve, reject) => {
       image.setAttribute('loading', 'eager');
       image.addEventListener('load', () => resolve());
-      image.addEventListener('error', () => reject(`can't load image: ${image.src}`));
+      image.addEventListener('error', () => reject(Error(`can't load image: ${image.src}`)));
     });
   }
 

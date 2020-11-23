@@ -7,9 +7,10 @@
 * CSS property [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) for snapping
 * CSS property [scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) for smooth JS scrolling
 * `loading` attribute for [Native Lazy Loading](https://web.dev/native-lazy-loading/)
-* compatible with [lazysizes.js](https://github.com/aFarkas/lazysizes)
+* Compatible with [lazysizes.js](https://github.com/aFarkas/lazysizes)
 * [Custom Events](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
-* it was named as `native-gallery` to become [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) in the future
+* It was named as `native-gallery` to become [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) in the future
+* Disadvantages: circular scrolling is [not implemented yet](https://github.com/bravecow/native-gallery/pulls) 🤷‍♀️
 
 ## Usage 
 

@@ -12,7 +12,9 @@
 * It was named as `native-gallery` to become [Custom Element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) in the future
 * Disadvantages: circular scrolling is [not implemented yet](https://github.com/bravecow/native-gallery/pulls) 🤷‍♀️
 
-## Usage 
+## Usage
+
+npm package: [native-gallery](https://www.npmjs.com/package/native-gallery)
 
 ```javascript
 import NativeGallery from 'native-gallery';
